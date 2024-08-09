@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Reminder App</h1>
+    <form id="reminderForm">
+        <label for="day">Select Day:</label>
+        <select id="day" name="day" required>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <label for="activity">Select Activity:</label>
+        <select id="activity" name="activity" required>
+            <option value="Wake up">Wake up</option>
+            <option value="Go to gym">Go to gym</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Meetings">Meetings</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Quick nap">Quick nap</option>
+            <option value="Go to library">Go to library</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Go to sleep">Go to sleep</option>
+        </select>
+
+        <button type="submit">Set Reminder</button>
+    </form>
+
+    <h2>Your Reminders:</h2>
+    <ul id="reminderList">
+        <!-- Reminders will be displayed here -->
+    </ul>
+
+    <audio id="chime" src="chime.mp3" preload="auto"></audio> <!-- Add a chime sound file -->
+
+    <script src="script.js"></script>
+</body>
+</html>
